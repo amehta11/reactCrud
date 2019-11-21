@@ -1,22 +1,258 @@
-.App {
-  text-align: center;
+body{
+  background-color: #F1F1F1;
+}
+.header{
+  height: 96px;
+  background-color: #ADB5BD;
+}
+.logo {
+ color: white; 
+ padding-left: 32px;
+ padding-top: 32px;
+}
+.logoBox {
+  width: 100%;
+}
+.blankSquare {
+  border: 1px solid #ffffff;
+  height: 32px;
+  width: 32px;
+  background: white;
+  float: left;
+}
+.companyName{
+  float: left;
+  margin-left: 10px;
+  font-size: x-large;
+}
+.manual-container{
+  /* width: 912px; */
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.table-view-add{
+  height: 72px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.table-header{
+  font-size: x-large;
+  color: #797979;
+  margin-top: 50px;
+  margin-bottom: 28px;
+}
+.table-view-List{
+  background-color: white;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* // table */
+.ReactTable {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.ReactTable .rt-thead {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.-loading {
+  display: none;
+}
+.ReactTable .rt-resizable-header-content{
+  margin: 16px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.ReactTable .rt-thead .rt-tr{
+  display: flex;
+  height: 48px;
+}
+.ReactTable .rt-table .rt-tr {
+  border-bottom: 1px solid #F1F1F1;
+}
+.ReactTable .rt-tbody .rt-tr-group .rt-td{
+  margin: 16px;
+  color: #505050;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.ReactTable .rt-tbody .rt-tr{
+  display: flex;
+  height: 72px;
 }
 
-.App-link {
-  color: #09d3ac;
+.ReactTable .rt-td input {
+    height: 40px;
+    border: none;
+    background-color: #F9F9F9;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #757575;
+    width: 70%;
+    padding-left: 10px;
+    border-color: #EEEEEE;
+}
+
+
+/* add new form style */
+
+.addForm{
+  padding-top: 16px;
+  margin-left: 16px;
+}
+
+.addForm .chield {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.addForm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.addForm .chield input {
+  height: 40px;
+  border: none;
+  background-color: #F9F9F9;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #757575;
+  width: 85%;
+  padding-left: 10px;
+  border-color: #EEEEEE;
+}
+.addForm .submitButton{
+  float: right;
+  margin-right: 30px;
+}
+.addForm .submitButton button{
+  height: 40px;
+  width: 100%;
+  background-color: #EDEDED;
+  border: none;
+  color: #757575;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error input[type=text] {
+  background-color: #fce4e4;
+  border: 1px solid #cc0033;
+  outline: none;
+  
+}
+.actionButton{
+border: 0;
+background: transparent;
+cursor: pointer;
+}
+
+.cancelButton{
+  height: 40px;
+  width: 100%;
+  background-color: #EDEDED;
+  border: none;
+  color: #1076F6;
+  /* padding: 10px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.saveButton{
+  height: 40px;
+  width: 100%;
+  background-color: #07f;
+  border: none;
+  color: #ffffff;
+  /* padding: 10px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancleAction{
+  float: left;
+  width: 47%;
+}
+.saveAction{
+  width: 47%;
+  float: right;
+}
+
+/* error message while adding form css */
+.error-message{
+  color: #cc0033;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+}
+/* success message div css */
+.successMessage {
+  color: green;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 500;
+}
+/* Custom Arrow to table Header*/
+
+.ReactTable .rt-resizer:before {
+  display: inline-block;
+  margin-right: 64px;
+  margin-top: 15px;
+  right: 25px;
+  top: 3px;
+  height: 18px;
+  width: 18px;
+  color: transparent;
+  content: '.';
+  background-size: 18px 18px;
+  background-repeat: no-repeat; 
+  opacity: 0.87;
+}
+.ReactTable .rt-resizable-header-content{
+  float: left;
+}
+
+.ReactTable .rt-th.-sort-asc .rt-resizer:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMTVWNmw0IDQgMS0xLTYtNi02IDYgMSAxIDQtNHY5eiIgZmlsbD0iIzMzMyIvPjwvc3ZnPg==);
+}
+
+.ReactTable .rt-th.-sort-desc .rt-resizer:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOCAzdjkuMTNMNCA4IDMgOWw2IDYgNi02LTEtMS00IDQuMTNWM3oiIGZpbGw9IiMzMzMiLz48L3N2Zz4=);
 }
