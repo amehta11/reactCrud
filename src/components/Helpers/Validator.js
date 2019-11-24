@@ -20,7 +20,7 @@ export default function validate (values) {
     /*
      * Phone validation regex,  
      * Allowing finnish phone number starting with 0 and 9 digits afterwards
-     * example : Daniela_Hammes@yahoo.com 
+     * example : 0456789078 
      */
     if (!phone || phone.trim() === '') {
       errors.phone = "Phone number is a required.";
