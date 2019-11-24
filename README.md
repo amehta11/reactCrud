@@ -1,6 +1,6 @@
 ## Short Description 
 
-Main goal is to provide, small module of static CRUD operation on users data using Reach Js. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Main goal is to provide, small module of static CRUD operation on users data using ReactJs. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Install and Configuration
 1. Clone the project into YOUR_PROJECT_FOLDER
