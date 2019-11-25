@@ -3,7 +3,7 @@
 Main goal is to provide, small module of static CRUD operation on users data using ReactJs. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
-[Click me](https://amehta11.github.io/reactCrud/index.html])
+[Click me](https://amehta11.github.io/reactCrud/index.html)
 
 # Install and Configuration
 1. Clone the project into YOUR_PROJECT_FOLDER
